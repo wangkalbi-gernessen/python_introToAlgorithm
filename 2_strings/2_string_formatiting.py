@@ -65,6 +65,12 @@ name = "Kazunobu"
 city = "Tokyo"
 print("My firstname is %s. I was born in %s" % (name, city))
 
+price = 150
+tax = 10
+real_price = price - (price * tax / 100)
+print("Price is %-5.3f. So the real price is %d." % (price, real_price))
+
+
 
 
 
