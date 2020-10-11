@@ -15,16 +15,25 @@
 # A closed interval includes the number, and open interval excludes it.
 # Test your program by print the mark and the grade for a number of different marks.
 
-mark = int(input("Please put your score: "))
+# mark = int(input("Please put your score: "))
+#
+# if mark >= 90:
+#     print("A")
+# elif 80 <= mark < 90:
+#     print("B")
+# elif 70 <= mark < 80:
+#     print("C")
+# elif 60 <= mark < 70:
+#     print("D")
+# else:
+#     print("F")
 
-if mark >= 90:
-    print("A")
-elif 80 <= mark < 90:
-    print("B")
-elif 70 <= mark < 80:
-    print("C")
-elif 60 <= mark < 70:
-    print("D")
+
+country = input("Input your favorite country: ")
+
+if country == "Japan":
+    print("Japanese")
+elif country == "Spain":
+    print("Spanish")
 else:
-    print("F")
-
+    print("Other languages")
