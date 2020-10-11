@@ -59,3 +59,12 @@ print(f"{a} x {b} = {a * b}")
 city = 10
 country = "Germany"
 print(f"My favorite country is {country}. The capital is {city}.")
+
+
+name = "Kazunobu"
+city = "Tokyo"
+print("My firstname is %s. I was born in %s" % (name, city))
+
+
+
+

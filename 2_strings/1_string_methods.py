@@ -21,3 +21,6 @@ print(city.find("xxx"))  # -1
 # case-sensitive (o) vs case-insentitive (x)
 greetings = "hello hello hello"
 print(greetings.count("hello", 5, 12))
+
+
+
