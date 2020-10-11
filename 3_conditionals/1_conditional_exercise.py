@@ -29,11 +29,26 @@
 #     print("F")
 
 
-country = input("Input your favorite country: ")
+# country = input("Input your favorite country: ")
+#
+# if country == "Japan":
+#     print("Japanese")
+# elif country == "Spain":
+#     print("Spanish")
+# else:
+#     print("Other languages")
 
-if country == "Japan":
-    print("Japanese")
-elif country == "Spain":
-    print("Spanish")
+# 3. 11 Excercises
+# Hours: 45
+# Rate: 10
+# Pay: 475.0
+
+rate = 10
+hour = int(input("Hours: "))
+regular_amount = 40 * rate
+
+if hour > 40:
+    rate *= 1.5
+    print(regular_amount + ((hour - 40) * rate))
 else:
-    print("Other languages")
+    print(regular_amount)
