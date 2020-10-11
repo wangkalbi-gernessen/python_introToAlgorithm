@@ -1,0 +1,68 @@
+# Tuples are almost identical to lists
+# The only big difference between lists and tuples is that
+# tuples cannot be modified (immutable)
+# Tuples, you can NOT add(append), change(replace) or delete(remove)
+# elements from the tuple.
+
+# Tuples "Immutable Lists"
+vowels = ("a", "e", "i", "o", "u")
+print(vowels[0])
+# vowels[2] = "b" # cannot change. Error appears
+print(vowels)
+print("K" in vowels)
+
+
+# Methods
+print(vowels.index("e"))
+print(vowels.count("i"))
+
+# Use cases
+# 1. return multiple values from a function
+
+"hello world bye "
+
+# def split_name(name: str) -> str:
+def split_name(name: str) -> str:
+    fullname = name.split(" ")
+    first = fullname[0]
+    last = fullname[1]
+
+    return first, last
+
+# 2. multiple assignments (_ to ignore)
+fn, ln = split_name("hello world bye")
+print(fn)
+print(ln)
+
+# 3. constant list of data
+livable_provinces = ("BC", "ON", "AB", "QC")
+
+# swap!
+a = 10
+b = 20
+# your code
+
+temp = a
+a = b
+b = temp
+
+print(a)  # a = 20
+print(b)  # b = 10
+
+
+
+# only python way
+x = 50
+y = 70
+
+x, y = y, x
+print(x)
+print(y)
+
+
+def split_names(*names): # By using *, many words in arguments can be used as tuple
+    print(names)
+
+
+split_names("Jiro")
+split_names("Carlos", "Martinez", "Rodrigo", "Santos")

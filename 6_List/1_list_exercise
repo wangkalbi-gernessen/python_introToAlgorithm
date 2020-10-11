@@ -1,0 +1,58 @@
+# print(list(range(11)))
+
+# range(start, end, steps): "iterable" , a sequence of integers
+# list(): "make a list
+# t"
+
+# def m_range(start: int, end: int, steps: int) -> list:
+#     """
+#     Returns a list of integers from start to end by steps
+#     ex) start <= i < end, skipped by steps
+#     m_range(1,6) -> [1, 2, 3, 4, 5]
+#     m_range(1, 7, 2) -> [1, 3, 5]
+#     m_range(5, 10) -> [5, 6, 7, 8, 9]
+#
+#     :param start:
+#     :param end:
+#     :param steps:
+#     :return:
+#
+#     """
+#     pass
+#
+# print(m_range(1, 6))  # [1,2,3,4,5]
+# print(m_range(1, 7, 2)) # [1,3,5]
+# print(m_range(5, 10)) # [5,6,7,8,9]
+
+def m_range(start: int, end: int, steps: int = 1) -> list:
+    stack = []
+    while start < end:
+        stack.append(start)
+        start += steps
+
+    return stack
+
+
+
+# *params
+# take arbitrary number of arguments as Tuple
+# Tuple: Immutable 'list'
+def xrange(*args):
+    if len(args) == 1:
+        return mrange(0, args[0])
+    elif len(args) == 2:
+        return mrange(args[0], args[1])
+    elif len(args) == 3:
+        return mrange(args[0], args[1], args[2])
+    else:
+        # raise an Error
+        raise TypeError("Invalid Number of Arguments!")
+
+
+# print(xrange(1, 5))
+# print(xrange(1, 10, 2))
+# print(xrange(10))
+
+print(m_range(1, 6))   # [1,2,3,4, 5]
+print(m_range(1, 7, 2))  # [1,3,5]
+print(m_range(5, 10))  # [5,6,7,8,9]
