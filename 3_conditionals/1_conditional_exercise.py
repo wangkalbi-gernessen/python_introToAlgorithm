@@ -43,12 +43,27 @@
 # Rate: 10
 # Pay: 475.0
 
-rate = 10
-hour = int(input("Hours: "))
-regular_amount = 40 * rate
+# rate = 10
+# hour = int(input("Hours: "))
+# regular_amount = 40 * rate
+#
+# if hour > 40:
+#     rate *= 1.5
+#     print(regular_amount + ((hour - 40) * rate))
+# else:
+#     print(regular_amount)
 
-if hour > 40:
-    rate *= 1.5
-    print(regular_amount + ((hour - 40) * rate))
-else:
-    print(regular_amount)
+# Exercises 2
+# Enter Hours: 20
+# Enter Rate: nine
+# Error, please enter numeric input
+
+hours = int(input("Hours: "))
+try:
+    if hours == " ":
+        print("Input a numeric number")
+    if hours == int(hours):
+        print("Input a numeric number")
+except ValueError:
+    print("Input a numeric number")
+
